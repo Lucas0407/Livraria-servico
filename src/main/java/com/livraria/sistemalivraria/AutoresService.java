@@ -1,5 +1,7 @@
 package com.livraria.sistemalivraria;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,14 @@ public class AutoresService {
 
     Autores cadastraAutores(Autores autores){
         return autoresRepository.save(autores);
-    } 
+    }
+    
+    Autores cadastrarLivros(Autores autores){
+        return autoresRepository.save(autores);
+    }
+
+    List<Autores> listarAutores(){
+        return autoresRepository.findAll();
+    }
 
 }
