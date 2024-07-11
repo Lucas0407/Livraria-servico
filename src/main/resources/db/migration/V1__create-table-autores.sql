@@ -1,6 +1,6 @@
 
 CREATE TABLE IF NOT EXISTS public.autores (
-	id int4 NOT NULL,
+	autor_id int4 NOT NULL,
 	nome varchar NOT NULL,
-	CONSTRAINT autor_pk PRIMARY KEY (id)
+	CONSTRAINT autor_pk PRIMARY KEY (autor_id)
 );
